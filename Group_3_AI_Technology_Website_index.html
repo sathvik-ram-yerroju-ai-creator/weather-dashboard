@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AetherMind AI | Next-Gen Artificial Intelligence Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-dot"></span>AetherMind<span>.ai</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#products">Products</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#applications">Applications</a></li>
+          <li><a href="#technology">Architecture</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact" class="nav-cta">Request Demo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section (Dark Showcase) -->
+  <section id="home" class="hero-dark">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="glow-badge">Enterprise & Developer AI Suite &bull; v4.2</span>
+        <h1>Build Autonomous Intelligence at <span>Hyperscale</span></h1>
+        <p>
+          AetherMind AI empowers engineering teams and enterprises with low-latency foundation models, 
+          multi-agent workflow orchestration, and real-time multimodal reasoning APIs.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-glow">Explore AI Products</a>
+          <a href="#technology" class="btn btn-glass">View Architecture</a>
+        </div>
+        <div class="hero-metrics">
+          <div>
+            <strong>99.98%</strong>
+            <span>API Uptime</span>
+          </div>
+          <div>
+            <strong>&lt; 45ms</strong>
+            <span>Token Latency</span>
+          </div>
+          <div>
+            <strong>128K</strong>
+            <span>Context Window</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-top">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">aethermind-inference.py</span>
+        </div>
+        <pre class="code-preview"><code><span class="c-kw">from</span> aethermind <span class="c-kw">import</span> AetherClient
+
+client = AetherClient(model=<span class="c-str">"aether-pro-4"</span>)
+
+response = client.agents.run(
+    task=<span class="c-str">"Analyze campus energy telemetry"</span>,
+    reasoning=<span class="c-str">"deep"</span>,
+    stream=<span class="c-bool">True</span>
+)
+
+<span class="c-kw">for</span> token <span class="c-kw">in</span> response:
+    <span class="c-fn">print</span>(token.text, end=<span class="c-str">""</span>)</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Products Section (Light Contrast) -->
+  <section id="products" class="section bg-light">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Core Ecosystem</span>
+        <h2>AI Products & Foundation Models</h2>
+        <p>Modular intelligence built for production codebases, research, and automated operations.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card product-card">
+          <div class="icon-box">01</div>
+          <h3>AetherCore LLM</h3>
+          <p>
+            High-precision reasoning model trained on scientific literature, multi-language code repositories, and structured logic tasks.
+          </p>
+          <ul class="spec-list">
+            <li>128K dynamic context memory</li>
+            <li>Native JSON & function calling</li>
+            <li>Zero data-retention enterprise mode</li>
+          </ul>
+        </article>
+
+        <article class="card product-card featured-border">
+          <div class="icon-box">02</div>
+          <h3>FlowAgent Studio</h3>
+          <p>
+            Visual and code-first orchestration engine for chaining autonomous AI agents with external APIs, databases, and webhooks.
+          </p>
+          <ul class="spec-list">
+            <li>Multi-agent task delegation</li>
+            <li>Built-in vector memory retrieval</li>
+            <li>Automated evaluation pipelines</li>
+          </ul>
+        </article>
+
+        <article class="card product-card">
+          <div class="icon-box">03</div>
+          <h3>VisionPulse Edge</h3>
+          <p>
+            Lightweight computer-vision neural engine optimized for real-time video analytics, industrial inspection, and smart cities.
+          </p>
+          <ul class="spec-list">
+            <li>60 FPS real-time object tracking</li>
+            <li>On-device quantized deployment</li>
+            <li>Sub-10ms edge inference</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Features -->
+  <section id="features" class="section bg-white">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Capabilities</span>
+        <h2>Engineered for Speed, Safety & Scale</h2>
+        <p>Everything required to take generative AI prototypes into mission-critical production.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="feature-row">
+          <div class="feat-badge">RAG</div>
+          <div>
+            <h4>Hybrid Semantic Retrieval</h4>
+            <p>Combine dense vector embeddings with lexical keyword search to ground model outputs in your live documentation.</p>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feat-badge">SEC</div>
+          <div>
+            <h4>Deterministic Guardrails</h4>
+            <p>Real-time prompt injection filtering, PII redaction, and schema validation before every response leaves the gateway.</p>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feat-badge">OPT</div>
+          <div>
+            <h4>Adaptive Model Routing</h4>
+            <p>Automatically route simple queries to ultra-fast distilled models while reserving deep reasoning for complex prompts.</p>
+          </div>
+        </div>
+        <div class="feature-row">
+          <div class="feat-badge">OBS</div>
+          <div>
+            <h4>Token-Level Telemetry</h4>
+            <p>Inspect latency breakdowns, tool-call traces, and cost analytics across every deployment environment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real-World Applications (Dark Accent Band) -->
+  <section id="applications" class="section bg-dark-band">
+    <div class="container">
+      <div class="section-head light-text">
+        <span class="eyebrow-dark">Industry Impact</span>
+        <h2>Real-World AI Applications</h2>
+        <p>Transforming workflows across software engineering, healthcare, and education.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="dark-card">
+          <span class="app-tag">Software Engineering</span>
+          <h3>Automated Code Review & Synthesis</h3>
+          <p>Detect security vulnerabilities, generate unit test suites, and refactor legacy modules directly inside CI/CD pipelines.</p>
+        </div>
+        <div class="dark-card">
+          <span class="app-tag">Smart Infrastructure</span>
+          <h3>Predictive Grid & Traffic Optimization</h3>
+          <p>Process IoT sensor streams to forecast peak loads, optimize transit routes, and reduce urban energy waste.</p>
+        </div>
+        <div class="dark-card">
+          <span class="app-tag">EdTech & Research</span>
+          <h3>Adaptive AI Tutoring Assistants</h3>
+          <p>Deliver step-by-step Socratic explanations, interactive coding labs, and personalized study assessments for students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Stack & Architecture -->
+  <section id="technology" class="section bg-light">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Under the Hood</span>
+        <h2>Technology & Inference Architecture</h2>
+        <p>A four-stage pipeline built on custom tensor kernels and distributed GPU clusters.</p>
+      </div>
+
+      <div class="pipeline-grid">
+        <div class="step-card">
+          <span class="step-num">Step 01</span>
+          <h4>Multimodal Tokenizer</h4>
+          <p>Unified byte-pair and patch encoding for text, source code, tables, and visual inputs.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">Step 02</span>
+          <h4>Sparse Mixture-of-Experts</h4>
+          <p>Activates specialized neural sub-networks per token to maximize reasoning depth per FLOP.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">Step 03</span>
+          <h4>Speculative Decoding</h4>
+          <p>Draft-and-verify parallel token generation delivering 2.8x faster streaming throughput.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">Step 04</span>
+          <h4>Safety & Verification Layer</h4>
+          <p>Post-inference policy checks and citation grounding prior to client delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership & Research Team -->
+  <section id="team" class="section bg-white">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">People</span>
+        <h2>Core AI Research & Engineering Team</h2>
+        <p>Researchers and systems architects pushing the frontier of applied artificial intelligence.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card team-card">
+          <div class="member-avatar">SR</div>
+          <h3>Satvik Ram</h3>
+          <p class="member-role">Founder & Lead AI Architect</p>
+          <p class="member-bio">Specializes in multi-agent orchestration, web systems, and applied generative AI workflows.</p>
+        </div>
+        <div class="card team-card">
+          <div class="member-avatar">AK</div>
+          <h3>Dr. Ananya Kulkarni</h3>
+          <p class="member-role">Head of Foundation Models</p>
+          <p class="member-bio">Leads pre-training scaling laws, alignment research, and sparse Mixture-of-Experts architectures.</p>
+        </div>
+        <div class="card team-card">
+          <div class="member-avatar">RV</div>
+          <h3>Rohan Verma</h3>
+          <p class="member-role">VP of Distributed Infrastructure</p>
+          <p class="member-bio">Architects low-latency GPU inference clusters, custom CUDA kernels, and global edge routing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & API Access Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <span class="eyebrow">Get Started</span>
+          <h2>Deploy AetherMind in Your Stack</h2>
+          <p>
+            Request early API keys, schedule an enterprise architecture walkthrough, or collaborate with our research team.
+          </p>
+          <ul class="contact-details">
+            <li><strong>Developer Support:</strong> api-support@aethermind.ai</li>
+            <li><strong>Research Lab:</strong> Innovation Hub, Andhra Pradesh, India</li>
+            <li><strong>Status:</strong> All Inference Clusters Operational</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Work or Student Email</label>
+            <input type="email" id="email" name="email" placeholder="name@organization.com" required />
+          </div>
+          <div class="form-group">
+            <label for="interest">Primary Use Case</label>
+            <select id="interest" name="interest">
+              <option value="api">AetherCore LLM API Access</option>
+              <option value="agents">FlowAgent Multi-Agent Automation</option>
+              <option value="vision">VisionPulse Edge Deployment</option>
+              <option value="academic">Academic / Hackathon Partnership</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="3" placeholder="Tell us about what you're building..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-glow full-width">Request API Access</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 AetherMind AI Technologies. Designed & Built with HTML5 & CSS3.</p>
+      <div class="footer-links">
+        <a href="#products">Models</a>
+        <a href="#technology">Architecture</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
